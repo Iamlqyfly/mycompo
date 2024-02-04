@@ -1,0 +1,26 @@
+{
+  "name": "mycompo",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter \"./packages/*\" build",
+    "publish": "pnpm --filter \"./packages/*\" publish",
+    "preversion": "changeset",
+    "version": "changeset version && pnpm install --no-frozen-lockfile && pnpm run format:code",
+    "release": "pnpm run clean && pnpm run build:packages && changeset publish",
+    "release:nobuild": "changeset publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.6",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
+}

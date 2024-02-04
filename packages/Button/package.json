@@ -1,0 +1,20 @@
+{
+  "name": "@mycompo/button",
+  "_globalName": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "private": true,
+  "file": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup --config ../../rollup.config.js",
+    "publish": "pnpm publish --tag latest --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
