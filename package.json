@@ -7,8 +7,8 @@
     "build": "pnpm --filter \"./packages/*\" build",
     "publish": "pnpm --filter \"./packages/*\" publish",
     "preversion": "changeset",
-    "version": "changeset version && pnpm install --no-frozen-lockfile && pnpm run format:code",
-    "release": "pnpm run clean && pnpm run build:packages && changeset publish",
+    "version": "changeset version && pnpm install --no-frozen-lockfile",
+    "release": "pnpm run build && changeset publish",
     "release:nobuild": "changeset publish"
   },
   "keywords": [],

@@ -29,6 +29,7 @@ var css_248z = ".alert{\n    color: red;\n}";
 styleInject(css_248z);
 
 function alert(){
+    console.debug('alert11111');
     return 'alert'
 }
 

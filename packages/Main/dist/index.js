@@ -9,6 +9,8 @@
         Alert
     };
 
+    console.debug(Alert);
+
     return index;
 
 }));

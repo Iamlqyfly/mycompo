@@ -6,4 +6,6 @@ var index = {
     Alert
 };
 
+console.debug(Alert);
+
 export { index as default };
